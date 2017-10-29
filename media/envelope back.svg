@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="288px" height="178px" viewBox="0 0 288 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>envelope back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-650.000000, -3053.000000)" fill="#BBBBA7">
+            <g id="Group" transform="translate(644.000000, 2999.000000)">
+                <path d="M91.6830862,78.183118 L244.566842,43.8363639 L244.566842,43.8363639 C248.533863,42.9451359 252.472252,45.4385587 253.36348,49.4055796 C253.627359,50.580154 253.599171,51.8015187 253.281383,52.9626683 L212.006007,203.777132 L212.006007,203.777132 C211.319027,206.287258 209.357846,208.248185 206.847631,208.934837 L56.0132281,250.194586 L56.0132281,250.194586 C52.0914084,251.267373 48.0424792,248.957777 46.9696915,245.035957 C46.6520885,243.874887 46.6240308,242.65365 46.8879759,241.479219 L81.241048,88.6243238 L81.241048,88.6243238 C82.411083,83.4182225 86.4768917,79.3527379 91.6830862,78.183118 Z" id="envelope-back" transform="translate(150.125664, 147.056526) rotate(45.000000) translate(-150.125664, -147.056526) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
