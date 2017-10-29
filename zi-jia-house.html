@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/normalize.css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+    </head>
+    <body>
+<!--
+        [if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]
+-->
+
+
+
+
+
+
+
+
+<section>
+    <h3 class="text-center header-title">cloudy apple</h3>
+
+	<div class="container block">
+            <h1><strong>Conscious Layers</strong></h1>
+        <h5>web design &amp; development, branding</h5>
+		<div class="row block-sml">
+
+			<div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, has tantas fuisset officiis in, eam nonumy fuisset et. Ne mei cibo consequat, dicant legendos accusamus sit at, modo partiendo theophrastus pri at. Nam et debet omnium sensibus, at debet virtute adipiscing nec, in mei aliquip qualisque. Ad sit sint vivendum.
+</p>
+			</div>
+			<div class="col-md-4">
+				<img width="100%" src="media/CL%20mockup%20LANDING.png">
+			</div>
+		</div>
+
+		<div class="row block-sml">
+			<div class="col-md-4">
+                <h2><strong class="strong-extended">Initial lo-fi</strong></h2>
+                <p>Lorem ipsum dolor sit amet, has tantas fuisset officiis in, eam nonumy fuisset et. Ne mei cibo consequat, dicant legendos accusamus sit at.</p>
+			</div>
+			<div class="col-md-8">
+				<img width="100%" src="media/CL%20mockup%20LANDING.png">
+			</div>
+		</div>
+
+		<div class="row block-sml">
+			<div class="col-md-8">
+                <video height="auto" width="100%" autoplay loop><source src="media/CL-animated-mockup.mp4" type="video/mp4"></video>
+				<img width="100%" src="media/CL%20mockup%20LANDING.png">
+			</div>
+			<div class="col-md-4 text-right">
+                <h2><strong class="strong-extended">Iterations</strong></h2>
+                <p>Lorem ipsum dolor sit amet, has tantas fuisset officiis in, eam nonumy fuisset et. Ne mei cibo consequat, dicant legendos accusamus sit at.
+</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<script>
+
+window.setInterval(function(){
+    $('#vid-mat')[0].currentTime = 0;
+    $('#vid-mat')[0].play();
+}, 12000);
+window.setInterval(function(){
+    $('#vid-pat')[0].currentTime = 0;
+    $('#vid-pat')[0].play();
+}, 15000);
+window.setInterval(function(){
+    $('#vid-jul')[0].currentTime = 0;
+    $('#vid-jul')[0].play();
+}, 18000);
+
+
+
+
+
+$(window).scroll(function(){
+  if($(this).scrollTop() > $(window).height()){
+    $('.header').css({'display': 'none'});
+    $('footer').css({'display': 'flex'});
+  }
+});
+
+$(window).scroll(function(){
+  if($(this).scrollTop() < $(window).height()){
+    $('.header').css({'display': 'block'});
+    $('footer').css({'display': 'none'});
+  }
+});
+</script>
+
+
+
+
+<script>
+function convertToRange(value, srcRange, dstRange){
+  // value is outside source range return
+  if (value < srcRange[0] || value > srcRange[1]){
+    return NaN;
+  }
+
+  var srcMax = srcRange[1] - srcRange[0],
+      dstMax = dstRange[1] - dstRange[0],
+      adjValue = value - srcRange[0];
+
+  return (adjValue * dstMax / srcMax) + dstRange[0];
+
+}
+
+$.fn.isOnScreen = function(){
+
+    var win = $(window);
+
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+
+
+$(window).on('resize', function () {
+    var elementOffset = $('.apple-trigger').offset().top;
+
+});
+
+var elementOffset = $('.apple-trigger').offset().top;
+var height = screen.height
+$(window).scroll(function(){
+
+var scrollAmount = $(this).scrollTop() - elementOffset;
+
+    if (scrollAmount > 0) {
+
+        console.log(scrollAmount);
+
+//  convertToRange(20,[0,50],[0,150]);
+scrollMapped = scrollAmount * 300 / height
+
+$('.env-apple').css('transform', 'translate3d(0,' + (scrollMapped) + 'px, 0)');
+    };
+        });
+
+
+</script>
+
+
+
+
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+
+</html>
