@@ -312,7 +312,9 @@ footer {
         .sprout-home-img {
             width: 100%;
         }
-
+.img-100 img {
+    width: 100%;
+}
 /* Large Devices, Wide Screens */
     @media only screen and (max-width : 768px) {
         .apple-animate {
