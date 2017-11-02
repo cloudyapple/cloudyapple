@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="css/style.css">
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -189,6 +189,7 @@ Branding</p>
                     <img class="env-front" src="/media/envelope%20front.svg">
                     <img class="env-back" src="media/envelope%20back.svg">
                 </div>
+                <img class="to-top-img goto-top" src="media/back-to-top.svg">
         </div>
 	   </div>
     </div>
@@ -314,7 +315,23 @@ $('.env-apple').css('transform', 'translate3d(0,' + (scrollMapped) + 'px, 0)');
 </script>
 
 
+<script>
+//jquery scroll to top
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var top =  $(".goto-top");
+        if ( $('body').height() <= (    $(window).height() + $(window).scrollTop() + 200 )) {
+  top.animate({"margin-left": "0px"},1500);
+        } else {
+            top.animate({"margin-left": "-100%"},1500);
+        }
+    });
 
+    $(".goto-top").on('click', function () {
+        $("html, body").animate({scrollTop: 0}, 1000);
+    });
+});
+</script>
     </body>
 
 </html>
