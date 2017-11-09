@@ -328,7 +328,22 @@ footer {
 }
 /* Large Devices, Wide Screens */
 
+.backbtn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 10px;
+}
 @media only screen and (max-width: 768px) {
+
+    .ca-envelope {
+       transform:scale(0.4,0.4);
+        right: -26px;
+        bottom: -26px;
+}
+    .env-apple {
+        display: none;
+    }
 	.apple-animate {
 		display: none;
 	}
